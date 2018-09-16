@@ -35,7 +35,7 @@ class App extends Component {
         <div className="row">
           <ToDoForm onAddTodo={this.handleAddTodo} />
         </div>
-        <div>
+        <div className="row">
           <p>Number of todos: {this.state.todos.length}</p>
         </div>
         <div className="row">

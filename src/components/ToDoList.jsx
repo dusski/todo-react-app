@@ -6,7 +6,14 @@ export class ToDoList extends Component {
     return (
       <div className="d-flex flex-column flex-grow-1">
         {this.props.todos.map((item, index) => {
-            return <ToDoCard key={index} todo={item} />
+          return (
+            <ToDoCard
+              key={index}
+              todo={item}
+              onDone={this.props.actions.toggleDone}
+              onArchive={this.props.actions.toggleArchive}
+            />
+          );
         })}
       </div>
     );

@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   handleAddTodo(todo) {
-    if(!todo && !todo.task && !todo.done && !todo.archived) return;
+    if(!todo && !todo.task) return;
 
     const newTodos = this.state.todos.concat(todo);
 
